@@ -1,0 +1,19 @@
+const prompt require('prompt-sync')();
+let alug = prompt("Digite o valor do aluguel"));
+let luz = prompt("Digite o valor da luz"));
+let agua = prompt("Digite o valor da agua"));
+
+
+let sal = prompt("Digite o valor do salário:"));
+let Despesas = alug + luz+agua;
+
+let saldo = sal - Despesas;
+
+console.log("contas pa pagar "+ agua +""+ luz+""+ alug);
+console.log("salario é "+ sal);
+
+if (saldo >= 0) {
+    console.log("positivo "+ saldo);
+} else {
+    console.log("negativo "+ saldo);
+}

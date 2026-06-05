@@ -1,0 +1,11 @@
+const prompt = require("prompt-sync")();
+
+let km = parseFloat(prompt("Digite a distância em quilômetros: "));
+
+let metros = km * 1000;
+let centimetros = km * 100000;
+let milimetros = km * 1000000;
+
+console.log(km + " km equivalem a " + metros + " metros");
+console.log(km + " km equivalem a " + centimetros + " centímetros");
+console.log(km + " km equivalem a " + milimetros + " milímetros");

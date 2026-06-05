@@ -1,0 +1,26 @@
+const prompt = require("prompt-sync")();
+
+let nome = prompt("Digite o nome do aluno: ");
+let idade = parseInt(prompt("Digite a idade do aluno: "));
+let curso = prompt("Digite o curso do aluno: ");
+let notaFinal = parseFloat(prompt("Digite a nota final do aluno: "));
+
+
+let aluno = {
+    nome: nome,
+    idade: idade,
+    curso: curso,
+    notaFinal: notaFinal
+};
+
+console.log("Nome: " + aluno.nome);
+console.log("Idade: " + aluno.idade);
+console.log("Curso: " + aluno.curso);
+console.log("Nota final: " + aluno.notaFinal);
+
+
+if (aluno.notaFinal >= 7) {
+    console.log("Aluno aprovado");
+} else {
+    console.log("Aluno reprovado");
+}
